@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ThirtyThrows</string>
+    <string name="throw_button">Throw</string>
+    <string name="round">Round</string>
+    <string name="round_1">Round 1</string>
+    <string name="round_2">Round 2</string>
+    <string name="round_3">Round 3</string>
+    <string name="round_4">Round 4</string>
+    <string name="round_5">Round 5</string>
+    <string name="round_6">Round 6</string>
+    <string name="round_7">Round 7</string>
+    <string name="round_8">Round 8</string>
+    <string name="round_9">Round 9</string>
+    <string name="round_10">Round 10</string>
+    <string name="total_score">Total score: </string>
+
+    <string name="start_text">Start by rolling the diceGame!</string>
+
+    <string-array name="dice_combos">
+        <item>Combo</item>
+        <item>Low</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+</resources>
