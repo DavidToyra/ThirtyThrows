@@ -104,6 +104,54 @@ public class DiceGame implements Parcelable
     {
         rolls = 3;
     }
+    
+    private int[][] findAllCombinations(int scoreChoice)
+    {
+        int [][]allCombinations = new int[6][6];
+        for(int i = 0;i<6;i++)
+        {
+            //For each combination set make a copy of the dice numbers
+            ArrayList<Die> dieNumberList = new ArrayList<>();
+            for(int x = 0;x<6;x++)
+            {
+                dieNumberList.add(diceArray[x]);
+                dieNumberList.get(x).setSelected(false);
+            }
+
+            //Check every die if it can be added with some other to reach
+            //The combo point.
+            for(int j = 0; j<6 ;j++)
+            {
+
+                //If the die is equal to scorechoice add it to the combinationarray
+                if(dieNumberList.get(i).getDieNumber() == scoreChoice)
+                {
+                    allCombinations[i][j] = dieNumberList.get(i).getDieNumber();
+                    dieNumberList.remove(dieNumberList.get(i));
+                }
+                //Try to add the die number of the next die and check if it reaches the
+                //desired scored.
+                else if(dieNumberList.get(i).getDieNumber()<scoreChoice)
+                {
+                    if
+                    /*
+                    Iterator<Die> it = dieNumberList.iterator();
+                    while (it.hasNext())
+                    {
+                        Die die = it.next();
+
+                        // do something
+                        if(die.getDieNumber()+)
+
+                        if (!it.hasNext())
+                            it = dieNumberList.iterator();
+                    }*/
+                }
+            }
+
+        }
+    }
+
 
     /**
      * Calculates the score of the low combo. All dice values under
